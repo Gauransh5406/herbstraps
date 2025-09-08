@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Herbstrap Web Store</title>
+  <style>
+    /* Basic reset and styles */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f7f4f0;
+      overflow-x: hidden;
+      position: relative;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin: 0.5em 0;
+      color: #2e7d32;
+    }
+
+    p {
+      font-size: 1.5em;
+      margin-bottom: 1.5em;
+    }
+
+    a {
+      font-size: 1.25em;
+      color: #405de6;
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+      transition: border-color 0.3s ease;
+    }
+
+    a:hover {
+      border-color: #405de6;
+    }
+
+    /* Hand band animation background */
+    .hand-band {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(45deg, #8bc34a, #558b2f);
+      border-radius: 50%;
+      box-shadow: 0 0 10px #7cb342;
+      opacity: 0.6;
+      animation: float 12s infinite ease-in-out;
+      filter: drop-shadow(0 0 4px #33691e);
+    }
+
+    /* Different positions and animations for multiple hand bands */
+    .hand-band:nth-child(1) {
+      top: 20%;
+      left: 10%;
+      animation-delay: 0s;
+      width: 50px;
+      height: 50px;
+    }
+
+    .hand-band:nth-child(2) {
+      top: 70%;
+      left: 15%;
+      animation-delay: 3s;
+      width: 70px;
+      height: 70px;
+      background: linear-gradient(45deg, #aed581, #7cb342);
+    }
+
+    .hand-band:nth-child(3) {
+      top: 40%;
+      right: 10%;
+      animation-delay: 6s;
+      width: 55px;
+      height: 55px;
+      background: linear-gradient(45deg, #689f38, #33691e);
+    }
+
+    .hand-band:nth-child(4) {
+      top: 80%;
+      right: 20%;
+      animation-delay: 9s;
+      width: 65px;
+      height: 65px;
+      background: linear-gradient(45deg, #9ccc65, #558b2f);
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0.6;
+      }
+      50% {
+        transform: translateY(-30px) rotate(15deg);
+        opacity: 1;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="hand-band"></div>
+  <div class="hand-band"></div>
+  <div class="hand-band"></div>
+  <div class="hand-band"></div>
+
+  <h1>Welcome to Herbstrap</h1>
+  <p>DM for order</p>
+  <a href="https://www.instagram.com/herbstrap?igsh=YTFoOW1yb2xoMTkw" target="_blank" rel="noopener noreferrer">Contact us on Instagram</a>
+</body>
+</html>
